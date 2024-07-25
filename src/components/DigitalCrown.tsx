@@ -9,7 +9,7 @@ export const DigitalCrown = () => {
     }, []);
 
     return (
-        <div className="mt-12 relative flex justify-center">
+        <div className="mt-36 relative flex justify-center">
             <div className="relative w-full flex justify-center">
                 <div className="w-full h-[100vh]"><img src={digitalcrownimg} className="relative z-50 w-full h-full"/></div>
                 <video ref={videoRef} src={digitalcrownvideo} className="absolute top-0" loop={true} muted={true} playsInline={true}  preload="none"></video>

@@ -27,7 +27,8 @@ export default {
                 "gallery-light-red": "#d8a097",
                 "gallery-light-green": "#e7ece3",
                 "gallery-green": "#afbfab",
-                "gallery-bg": "#F5F5F7"
+                "gallery-bg": "#F5F5F7",
+                "main-grey": "#86868b",
             },
         },
     },
