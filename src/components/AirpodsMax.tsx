@@ -19,7 +19,7 @@ export const AirpodsMax = () => {
 
 export const MainNavbar = () => {
     return (
-        <nav className="flex h-[8vh] w-screen px-[10vw] items-center justify-between">
+        <nav className="flex h-[8vh] w-full px-[10vw] items-center justify-between">
             <img src={Apple} alt="Apple Logo" className="h-[16px]"/>
             <ul className="flex gap-8">
                 {mainNavbar.map((item, index) => (
@@ -68,7 +68,7 @@ export const SecondNavbar = () => {
     }
 
     return (
-        <div className="w-screen sticky mt-2 z-20 flex justify-center top-0">
+        <div className="w-full sticky mt-2 z-[51] flex justify-center top-0">
             <motion.div
                 initial="hidden"
                 animate={controls}
@@ -112,10 +112,14 @@ export const PresentationSection = () => {
         offset: ["end end", "end start"]
     });
 
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 0.85]);
+    useEffect(() => {
+        scrollYProgress.on("change", e => console.log(e))
+    }, []);
+
+    const scale = useTransform(scrollYProgress, [0, 1], [0.95, 1.2]);
 
     return (
-        <div className="flex relative items-center max-w-screen justify-center mt-6">
+        <div className="flex relative items-center w-full justify-center mt-2">
             <motion.div
                 className="z-10 w-[40vw]"
                 initial={{
@@ -128,6 +132,9 @@ export const PresentationSection = () => {
                 }}
                 transition={{
                     duration: 1.6
+                }}
+                style={{
+                    scale
                 }}
             >
                 <img ref={targetRef} src={AirPodsMaxImg} alt="Airpods Max" className="w-full"/>
@@ -143,7 +150,7 @@ export const PresentationSection = () => {
                     delay: 1,
                     duration: 0.6
                 }}
-                className="absolute font-poppins font-semibold text-black text-[186px]">AirPods Max
+                className="absolute font-poppins font-semibold text-black/90 text-[186px]">AirPods Max
             </motion.p>
         </div>
 
