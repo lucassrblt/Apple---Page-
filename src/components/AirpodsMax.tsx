@@ -75,7 +75,7 @@ export const SecondNavbar = () => {
                 transition={{duration: 0.2}}
                 ref={stickyRef}
                 onClick={() => console.log('test', isPinned)}
-                className={clsx("flex justify-between py-4 border-b border-secondnav-border ", {"w-[calc(100vw-20vw)] backdrop-blur-none" : !isPinned},{"w-screen backdrop-blur-xl bg-slate-50/80 px-[10vw]" : isPinned === true})}>
+                className={clsx("flex justify-between py-3 border-b border-secondnav-border ", {"w-[calc(100vw-20vw)] backdrop-blur-none" : !isPinned},{"w-screen backdrop-blur-xl bg-slate-50/80 px-[10vw]" : isPinned === true})}>
                 <div className="w-fit h-fit">
                     <h6 className="font-poppins text-mainnav-black text-xl font-medium">AirPods Max</h6>
                 </div>

@@ -3,6 +3,7 @@ import {AirpodsMax, MainNavbar, PresentationSection, SecondNavbar, TextSection} 
 import {DigitalCrown} from "./components/DigitalCrown.tsx";
 import {GallerySection} from "./components/GallerySection.tsx";
 import {ModelSection} from "./components/ModelSection.tsx";
+import {SecondModelSection} from "./components/SecondModelSection.tsx";
 
 function App() {
     // const [displaySplashScreen, setDisplaySplashScreen] = useState(true)
@@ -31,6 +32,7 @@ function App() {
             <ModelSection />
             <DigitalCrown />
             <GallerySection />
+            <SecondModelSection />
             {/*<VideoComponent/>*/}
         </main>
     )
