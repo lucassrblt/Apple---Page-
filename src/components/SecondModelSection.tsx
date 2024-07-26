@@ -3,7 +3,7 @@ import top from '../assets/images/airpods-top2.jpg'
 
 export const SecondModelSection = () => {
     return (
-        <section className="bg-black w-full flex flex-col mt-64">
+        <section className="bg-black w-full flex flex-col mt-">
             <div className="flex flex-col p-32 gap-16">
                 <div className="w-[60vw]"><h2 className="font-poppins font-semibold text-6xl text-white leading-tight">Computational audio. Key to performance.</h2></div>
                 <div className="w-[55vw]"><p className="font-poppins font-medium text-lg text-[#6e6e73]">With a powerful Apple‑designed H1 chip in each cup, our custom acoustic design, and advanced

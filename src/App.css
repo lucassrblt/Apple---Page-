@@ -24,3 +24,7 @@ body{
     flex-direction: column;
     position: relative;
 }
+
+.gradient{
+    background-image: radial-gradient(circle at bottom, #3C3E3B 0%, black 94%)
+}

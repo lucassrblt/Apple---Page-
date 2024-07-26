@@ -4,6 +4,7 @@ import {DigitalCrown} from "./components/DigitalCrown.tsx";
 import {GallerySection} from "./components/GallerySection.tsx";
 import {ModelSection} from "./components/ModelSection.tsx";
 import {SecondModelSection} from "./components/SecondModelSection.tsx";
+import {SpatialAudio} from "./components/SpatialAudio.tsx";
 
 function App() {
     // const [displaySplashScreen, setDisplaySplashScreen] = useState(true)
@@ -33,6 +34,7 @@ function App() {
             <DigitalCrown />
             <GallerySection />
             <SecondModelSection />
+            <SpatialAudio />
             {/*<VideoComponent/>*/}
         </main>
     )
